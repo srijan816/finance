@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quant"
+version = "0.1.0"
+description = "Personal Quant Research Lab — multi-agent stock intelligence"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.0.0",
+    "rich>=14.0.0",
+    "yfinance>=0.2.63",
+    "requests>=2.32.4",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "vectorbt>=0.25.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+]
+
+[project.scripts]
+quant = "quant.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["quant*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra -q --tb=short"

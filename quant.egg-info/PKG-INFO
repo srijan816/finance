@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: quant
+Version: 0.1.0
+Summary: Personal Quant Research Lab — multi-agent stock intelligence
+Requires-Python: >=3.10
+Requires-Dist: click>=8.0.0
+Requires-Dist: rich>=14.0.0
+Requires-Dist: yfinance>=0.2.63
+Requires-Dist: requests>=2.32.4
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: vectorbt>=0.25.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "dev"
