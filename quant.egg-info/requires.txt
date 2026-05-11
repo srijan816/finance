@@ -9,3 +9,7 @@ vectorbt>=0.25.0
 [dev]
 pytest>=7.0.0
 pytest-asyncio>=0.21.0
+
+[research]
+pyportfolioopt>=1.6.0
+riskfolio-lib>=7.2.1

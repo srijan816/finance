@@ -1,6 +1,11 @@
 .env
+.DS_Store
 __pycache__/
 *.pyc
-data/*.db
+data/
+reports/
+runs/
+scripts/quant_lab_norgate_export/
+scripts/quant_lab_norgate_export_broad/
 .venv/
 upstream/
